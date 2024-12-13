@@ -44,4 +44,11 @@ obtenerTextoP(event: Event){
   this.contenidoParagraph = p.innerHTML
   }
 
+li: string = ""
+
+clicUsuario(event: Event){
+const li = event.target as HTMLLIElement
+this.li = li.innerHTML
+}
+
 }
