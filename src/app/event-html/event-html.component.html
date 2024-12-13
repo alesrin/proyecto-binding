@@ -1,0 +1,41 @@
+<textarea name="textarea" id="textarea"(input)="actualizarTexto($event)" placeholder="Escribe lo que tu quieras"></textarea>
+
+<p>El valor recogido en el textarea es {{ texto }}</p>
+
+<select (change)="actualizarSelect($event)" name="select" id="select">
+    <option value="1">Opción 1</option> 
+    <option value="2" >Opción 2</option>
+    <option value="3">Opción 3</option>
+</select>
+
+<p class="textoInter">Opción seleccionada: <span class="textoInter2"> {{ seleccion }}</span></p>
+
+
+<img width="100px" height="auto" (click)="trackearImagen($event)" src="../../assets/blog-veterpet-edad-gatitos.jpg" alt="el gato de mi tia">
+
+
+
+<img width="100px" height="auto"  (click)="trackearImagen($event)" src="../../assets/images.jpeg" alt="el gato de mi vecina">
+
+
+<p>La fuente de la imagen seleccionada es: {{ srcImageclicked }}</p>
+<p>El título de la imagen seleccionada es: {{ altImageclicked }}</p>
+
+<div (click)="obtenerTextoDiv($event)" >
+    Contenido del div
+</div>
+<div (click)="obtenerTextoDiv($event)" >
+    Contenido del segundo div
+</div>
+
+<p (click)="obtenerTextoP($event)" >
+    Contenido del p
+</p>
+<p (click)="obtenerTextoP($event)" >
+    Contenido del segundo p
+</p>
+
+
+<p> div: {{ contenidoDiv }} </p>
+<p> p: {{ contenidoParagraph }} </p>
+
