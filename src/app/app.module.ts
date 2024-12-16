@@ -14,6 +14,7 @@ import { MinijuegoHijoComponent } from './minijuego-hijo/minijuego-hijo.componen
 import { BotonComponent } from './boton/boton.component';
 import { TemplateComponent } from './template/template.component';
 import { ImagenComponent } from './imagen/imagen.component';
+import { CardProductoComponent } from './card-producto/card-producto.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ImagenComponent } from './imagen/imagen.component';
     MinijuegoHijoComponent,
     BotonComponent,
     TemplateComponent,
-    ImagenComponent
+    ImagenComponent,
+    CardProductoComponent
   ],
   imports: [
     BrowserModule,
