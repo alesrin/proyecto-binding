@@ -1,0 +1,23 @@
+<h1>Lista de Productos</h1>
+<ul>
+  <li *ngFor="let producto of productos" (click)="productoSeleccionado = producto">
+    {{ producto }}
+  </li>
+</ul>
+
+<!-- La directiva *ngFor  
+ 
+SINTAXIS -> *ngFor = " let elemento of coleccion"
+-->
+
+
+<app-hijo1 [producto]="productoSeleccionado" (favorito)="recibirNotificacionFavorito($event)">
+</app-hijo1>
+
+
+<!--COMUNICACIÓN ENTRE HERMANOS
+
+<h1>Selector de Colores</h1>
+
+<app-hijo1 (colorSeleccionado)="actualizarColor($event)"></app-hijo1>
+<app-hijo2 [color]="colorSeleccionado"></app-hijo2> -->

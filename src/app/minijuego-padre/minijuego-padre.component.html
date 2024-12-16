@@ -1,0 +1,14 @@
+<h1>Minijuego: Adivina el Número</h1>
+<p>Estoy pensando en un número entre 1 y 100. ¿Puedes adivinar cuál es?</p>
+
+<!-- Mensaje de feedback -->
+<p *ngIf="mensaje">{{ mensaje }}</p>
+
+<!-- Mostrar el componente hijo -->
+<app-minijuego-hijo 
+  [juegoTerminado]="juegoTerminado" 
+  (numeroIntento)="procesarIntento($event)">
+</app-minijuego-hijo>
+
+<!-- Botones condicionales -->
+<button *ngIf="juegoTerminado" (click)="reiniciarJuego()">Reiniciar Juego</button>

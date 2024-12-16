@@ -1,18 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms'; 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EventHtmlComponent } from './event-html/event-html.component';
+import { PadreComponent } from './padre/padre.component';
+import { Hijo1Component } from './hijo1/hijo1.component';
+import { Hijo2Component } from './hijo2/hijo2.component';
+import { TextareaComponent } from './textarea/textarea.component';
+import { ConfirmacionMensajeComponent } from './confirmacion-mensaje/confirmacion-mensaje.component';
+import { MinijuegoPadreComponent } from './minijuego-padre/minijuego-padre.component';
+import { MinijuegoHijoComponent } from './minijuego-hijo/minijuego-hijo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventHtmlComponent
+    EventHtmlComponent,
+    PadreComponent,
+    Hijo1Component,
+    Hijo2Component,
+    TextareaComponent,
+    ConfirmacionMensajeComponent,
+    MinijuegoPadreComponent,
+    MinijuegoHijoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

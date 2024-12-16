@@ -1,0 +1,9 @@
+<!-- Campo de entrada para el intento -->
+<div *ngIf="!juegoTerminado">
+    <input type="number" [(ngModel)]="intento" placeholder="Ingresa un número" />
+    <button (click)="enviarIntento()">Probar</button>
+  </div>
+  
+  <!-- Mensaje cuando el juego ha terminado -->
+  <p *ngIf="juegoTerminado">¡El juego ha terminado!</p>
+  
