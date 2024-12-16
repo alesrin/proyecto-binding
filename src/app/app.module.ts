@@ -11,6 +11,9 @@ import { TextareaComponent } from './textarea/textarea.component';
 import { ConfirmacionMensajeComponent } from './confirmacion-mensaje/confirmacion-mensaje.component';
 import { MinijuegoPadreComponent } from './minijuego-padre/minijuego-padre.component';
 import { MinijuegoHijoComponent } from './minijuego-hijo/minijuego-hijo.component';
+import { BotonComponent } from './boton/boton.component';
+import { TemplateComponent } from './template/template.component';
+import { ImagenComponent } from './imagen/imagen.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { MinijuegoHijoComponent } from './minijuego-hijo/minijuego-hijo.componen
     TextareaComponent,
     ConfirmacionMensajeComponent,
     MinijuegoPadreComponent,
-    MinijuegoHijoComponent
+    MinijuegoHijoComponent,
+    BotonComponent,
+    TemplateComponent,
+    ImagenComponent
   ],
   imports: [
     BrowserModule,
