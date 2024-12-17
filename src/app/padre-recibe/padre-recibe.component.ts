@@ -6,9 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./padre-recibe.component.css']
 })
 export class PadreRecibeComponent {
-mensaje_recibido: string = ""
+//mensaje_recibido: string = ""
+nombreRecibido: string = '';
 
-recibirMensaje(mensaje: string){
+/* recibirMensaje(mensaje: string){
   this.mensaje_recibido = mensaje
+} */
+
+recibirNombre(nombre: string) {
+  this.nombreRecibido = nombre;
 }
+
+
 }

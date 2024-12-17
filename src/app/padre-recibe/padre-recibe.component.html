@@ -1,7 +1,10 @@
 <h2>Componente padre</h2>
 
-<app-hijo-emite (notificarPadre)="recibirMensaje($event)"></app-hijo-emite>
-<p>Mensaje del hijo: {{ mensaje_recibido }}</p>
+<!-- <app-hijo-emite (notificarPadre)="recibirMensaje($event)"></app-hijo-emite>
+<p>Mensaje del hijo: {{ mensaje_recibido }}</p> -->
 
 
+<p *ngIf="nombreRecibido">¡Bienvenido, {{ nombreRecibido }}!</p>
 
+
+<app-hijo-emite (nombreEnviado)="recibirNombre($event)"></app-hijo-emite>

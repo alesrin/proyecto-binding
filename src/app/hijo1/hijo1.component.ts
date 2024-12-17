@@ -10,7 +10,7 @@ export class Hijo1Component {
     //@Input() propiedad-que-recibo-del-padre
   @Input() producto: string = ''; // Recibe el producto seleccionado
   // @Output() evente-a-enviar = new EventEmitter<string>()
-  //1. Output declara la propiedad
+  //1. Output declara la propiedad de tipo evento
   //2. Definimos el nombre del evento:favorito
   //3. Creamos el emisos de eventos que puede enviar datos de tipo string
   @Output() favorito = new EventEmitter<string>(); // Notifica al padre
