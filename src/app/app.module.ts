@@ -17,6 +17,8 @@ import { ImagenComponent } from './imagen/imagen.component';
 import { CardProductoComponent } from './card-producto/card-producto.component';
 import { HijoEmiteComponent } from './hijo-emite/hijo-emite.component';
 import { PadreRecibeComponent } from './padre-recibe/padre-recibe.component';
+import { FormularioComponent } from './formulario/formulario.component';
+import { TemplateformComponent } from './templateform/templateform.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { PadreRecibeComponent } from './padre-recibe/padre-recibe.component';
     ImagenComponent,
     CardProductoComponent,
     HijoEmiteComponent,
-    PadreRecibeComponent
+    PadreRecibeComponent,
+    FormularioComponent,
+    TemplateformComponent
   ],
   imports: [
     BrowserModule,

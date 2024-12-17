@@ -1,0 +1,16 @@
+<h4>Formulario de recogida de datos</h4>
+<div>
+<label for="nombre">Nombre:</label>
+<input id="nombre" type="text" [(ngModel)]="nombre">
+</div>
+<div>
+<label for="edad">Edad:</label>
+<input id="edad" type="number" [(ngModel)]="edad">
+</div>
+<div>
+<label for="email">Correo electrónico:</label>
+<input id="email" type="text" [(ngModel)]="email">
+</div>
+
+
+<button (click)="enviarDatos()">Enviar datos</button>

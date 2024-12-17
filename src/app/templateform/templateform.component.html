@@ -1,0 +1,10 @@
+<h1>Bienvenido a la página de registro</h1>
+
+<app-formulario (datosEnviados)="recibirDatos($event)"></app-formulario>
+
+
+<div *ngIf="datosRecibidos">
+<p>El nombre que has registrado es: {{ datosRecibidos.nombre }}</p>
+<p>La edad que has registrado es: {{ datosRecibidos.edad }}</p>
+<p>El email que has registrado es: {{ datosRecibidos.email }}</p>
+</div>
