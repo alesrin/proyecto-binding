@@ -10,6 +10,19 @@
 SINTAXIS -> *ngFor = " let elemento of coleccion"
 -->
 
+<!-- COMUNICACIÓN DE HIJO A PADRE 
+ @Output permite que un componente hijo le envíe información a su componente padre.
+ Ej: 
+ app-template -> H1 saludando al usuario {{nombre}}
+    app-formulario -> formulario que recohe la propiedad nombre
+- SINTAXIS:
+  · @Output: Se usa en el TS del componente hijo que quiere emitir un evento. Define un evento que será emitido al padre.
+  · EventEmitter: Me permite emitir eventos y datos desde el componente hijo al componenete padre
+  · El padre se tendrá que subscribir al evento del componente hijo para ejecutar una acción cuando reciba dicho evento
+
+
+
+-->
 
 <app-hijo1 [producto]="productoSeleccionado" (favorito)="recibirNotificacionFavorito($event)">
 </app-hijo1>

@@ -10,6 +10,9 @@ texto_boton: string = ""
 enviar: string = "Enviar"
 back: string = "Atrás"
 info: string = "Solicitar Información"
+
+
+
 srcIronman: string = "../assets/images.jpeg"
 srcThor: string = "../assets/blog-veterpet-edad-gatitos.jpg"
 mostrarAlert0(){

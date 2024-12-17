@@ -15,6 +15,8 @@ import { BotonComponent } from './boton/boton.component';
 import { TemplateComponent } from './template/template.component';
 import { ImagenComponent } from './imagen/imagen.component';
 import { CardProductoComponent } from './card-producto/card-producto.component';
+import { HijoEmiteComponent } from './hijo-emite/hijo-emite.component';
+import { PadreRecibeComponent } from './padre-recibe/padre-recibe.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { CardProductoComponent } from './card-producto/card-producto.component';
     BotonComponent,
     TemplateComponent,
     ImagenComponent,
-    CardProductoComponent
+    CardProductoComponent,
+    HijoEmiteComponent,
+    PadreRecibeComponent
   ],
   imports: [
     BrowserModule,

@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class BotonComponent {
 @Input() texto_boton: string = ""
+
 }

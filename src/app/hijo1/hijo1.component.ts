@@ -9,6 +9,10 @@ export class Hijo1Component {
   //Sintaxis de @Input:
     //@Input() propiedad-que-recibo-del-padre
   @Input() producto: string = ''; // Recibe el producto seleccionado
+  // @Output() evente-a-enviar = new EventEmitter<string>()
+  //1. Output declara la propiedad
+  //2. Definimos el nombre del evento:favorito
+  //3. Creamos el emisos de eventos que puede enviar datos de tipo string
   @Output() favorito = new EventEmitter<string>(); // Notifica al padre
 
   // Método que emite el evento al padre
@@ -17,6 +21,10 @@ export class Hijo1Component {
       this.favorito.emit(this.producto); // Notifica al padre
     }
   }
+  //If <condicion> edad < 18{
+    // bloque de código que se va a ejecutar si la condición es evaluada como verdadera
+    //alert("Eres menor de edad y no puedes entrar")
+    //}
 
   //COMUNICACIÓN HERMANOS
   @Output() colorSeleccionado = new EventEmitter<string>(); // Notifica al padre
