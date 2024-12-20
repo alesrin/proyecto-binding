@@ -6,7 +6,16 @@ import { Component, Input, Output, EventEmitter  } from '@angular/core';
   styleUrls: ['./hijo1.component.css']
 })
 export class Hijo1Component {
-  //Sintaxis de @Input:
+@Output() mensajeEnviado = new EventEmitter<string>()
+mensaje: string = ''
+
+enviarMensaje(){
+this.mensajeEnviado.emit(this.mensaje)
+this.mensaje = ''
+}
+
+
+/*   //Sintaxis de @Input:
     //@Input() propiedad-que-recibo-del-padre
   @Input() producto: string = ''; // Recibe el producto seleccionado
   // @Output() evente-a-enviar = new EventEmitter<string>()
@@ -32,6 +41,8 @@ export class Hijo1Component {
   // Método para emitir el color seleccionado
   seleccionarColor(color: string) {
     this.colorSeleccionado.emit(color); // Emite el color al padre
-  }
+  } */
+
+
 
 }

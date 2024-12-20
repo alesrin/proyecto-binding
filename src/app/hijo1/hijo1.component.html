@@ -1,14 +1,14 @@
-<h2>Detalle del Producto</h2>
+<!-- <h2>Detalle del Producto</h2>
 
 <p *ngIf="producto">Producto seleccionado: {{ producto }}</p>
 
 <p *ngIf="!producto">Selecciona un producto para ver más detalles.</p>
 
-<button *ngIf="producto" (click)="marcarComoFavorito()">Marcar como favorito</button>
+<button *ngIf="producto" (click)="marcarComoFavorito()">Marcar como favorito</button> -->
 
 
-<!-- COMUNICACIÓN HERMANOS -->
-<!-- <h2>Selecciona un color:</h2>
+<!-- COMUNICACIÓN HERMANOS 
+<h2>Selecciona un color:</h2>
 <button (click)="seleccionarColor('Rojo')">Rojo</button>
 <button (click)="seleccionarColor('Verde')">Verde</button>
 <button (click)="seleccionarColor('Azul')">Azul</button> -->
@@ -17,5 +17,13 @@
 - directiva condicional *ngIf 
     SINTAXIS -> *ngIf="condición"
     *ngIf="edad >=18 " -> True o False
-    *ngIf: Evalúa una condición y muestra el elemento que la posee en función de si esa condición es evaluada como True (verdadera) o como False (falsa). 
--->
+    *ngIf: Evalúa una condición y muestra el elemento que la posee en función de si esa condición es evaluada como True (verdadera) o como False (falsa). -->
+
+    <!-- EMITIR UN MENSAJE DESDE HIJO 1 (hermano 1) a HIJO 2 (hermano 2) -->
+
+<h3>Hermano 1</h3>
+<input type="text" [(ngModel)]="mensaje" placeholder="Escribe un mensaje">
+<button (click)="enviarMensaje()" >Enviar mensaje</button>
+
+
+

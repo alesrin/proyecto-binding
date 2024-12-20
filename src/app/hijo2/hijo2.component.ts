@@ -6,5 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./hijo2.component.css']
 })
 export class Hijo2Component {
-  @Input() color: string = ''; // Recibe el color seleccionado desde el padre
+/*   @Input() color: string = ''; // Recibe el color seleccionado desde el padre */
+@Input() mensaje: string = ''
 }
