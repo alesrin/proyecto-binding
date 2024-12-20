@@ -22,12 +22,5 @@ export class PadreComponent {
   actualizarColor(color: string) {
     this.colorSeleccionado = color;
     alert(`El color seleccionado es: ${color}`); // Notifica al usuario con un alert
-  } */
-
-mensajeCompartido: string = ""
-
-actualizarMensaje(nuevoMensaje: string){
-this.mensajeCompartido = nuevoMensa
-}
-
+  }
 }

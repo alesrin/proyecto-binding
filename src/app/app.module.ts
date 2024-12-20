@@ -3,22 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EventHtmlComponent } from './event-html/event-html.component';
-import { PadreComponent } from './padre/padre.component';
-import { Hijo1Component } from './hijo1/hijo1.component';
-import { Hijo2Component } from './hijo2/hijo2.component';
-import { TextareaComponent } from './textarea/textarea.component';
-import { ConfirmacionMensajeComponent } from './confirmacion-mensaje/confirmacion-mensaje.component';
-import { MinijuegoPadreComponent } from './minijuego-padre/minijuego-padre.component';
-import { MinijuegoHijoComponent } from './minijuego-hijo/minijuego-hijo.component';
-import { BotonComponent } from './boton/boton.component';
-import { TemplateComponent } from './template/template.component';
-import { ImagenComponent } from './imagen/imagen.component';
-import { CardProductoComponent } from './card-producto/card-producto.component';
-import { HijoEmiteComponent } from './hijo-emite/hijo-emite.component';
-import { PadreRecibeComponent } from './padre-recibe/padre-recibe.component';
-import { FormularioComponent } from './formulario/formulario.component';
-import { TemplateformComponent } from './templateform/templateform.component';
+import { EventHtmlComponent } from './components/event-html/event-html.component';
+import { PadreComponent } from './templates/padre/padre.component';
+import { Hijo1Component } from './components/hijo1/hijo1.component';
+import { Hijo2Component } from './components/hijo2/hijo2.component';
+import { TextareaComponent } from './components/textarea/textarea.component';
+import { ConfirmacionMensajeComponent } from './components/confirmacion-mensaje/confirmacion-mensaje.component';
+import { MinijuegoPadreComponent } from './templates/minijuego-padre/minijuego-padre.component';
+import { MinijuegoHijoComponent } from './components/minijuego-hijo/minijuego-hijo.component';
+import { BotonComponent } from './components/boton/boton.component';
+import { TemplateComponent } from './templates/template/template.component';
+import { ImagenComponent } from './components/imagen/imagen.component';
+import { CardProductoComponent } from './components/card-producto/card-producto.component';
+import { HijoEmiteComponent } from './components/hijo-emite/hijo-emite.component';
+import { PadreRecibeComponent } from './templates/padre-recibe/padre-recibe.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { TemplateformComponent } from './templates/templateform/templateform.component';
+import { HijoviewComponent } from './components/hijoview/hijoview.component';
+import { PadreviewComponent } from './templates/padreview/padreview.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { TemplateformComponent } from './templateform/templateform.component';
     HijoEmiteComponent,
     PadreRecibeComponent,
     FormularioComponent,
-    TemplateformComponent
+    TemplateformComponent,
+    HijoviewComponent,
+    PadreviewComponent
   ],
   imports: [
     BrowserModule,
