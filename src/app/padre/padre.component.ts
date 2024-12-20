@@ -27,7 +27,7 @@ export class PadreComponent {
 mensajeCompartido: string = ""
 
 actualizarMensaje(nuevoMensaje: string){
-this.mensajeCompartido = nuevoMensaje
+this.mensajeCompartido = nuevoMensa
 }
 
 }
