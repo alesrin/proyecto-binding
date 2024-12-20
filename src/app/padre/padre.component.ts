@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./padre.component.css']
 })
 export class PadreComponent {
-/*   productos = ['Producto A', 'Producto B', 'Producto C', 'Producto A', 'Producto B', 'Producto C']; // Lista de productos
+  productos = ['Producto A', 'Producto B', 'Producto C', 'Producto A', 'Producto B', 'Producto C']; // Lista de productos
   productoSeleccionado: string = ''; // Producto que se seleccionará
 
   // Método que se ejecuta cuando el hijo notifica al padre

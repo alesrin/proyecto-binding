@@ -1,10 +1,10 @@
-<!-- <h1>Lista de Productos</h1>
+<h1>Lista de Productos</h1>
 <ul>
   <li *ngFor="let producto of productos" (click)="productoSeleccionado = producto">
     {{ producto }}
   </li>
 </ul>
- -->
+
 <!-- La directiva *ngFor  
  
 SINTAXIS -> *ngFor = " let elemento of coleccion"
@@ -24,21 +24,13 @@ SINTAXIS -> *ngFor = " let elemento of coleccion"
 
 -->
 
-<!-- <app-hijo1 [producto]="productoSeleccionado" (favorito)="recibirNotificacionFavorito($event)">
-</app-hijo1> -->
+<app-hijo1 [producto]="productoSeleccionado" (favorito)="recibirNotificacionFavorito($event)">
+</app-hijo1>
 
 
-<!-- COMUNICACIÓN ENTRE HERMANOS 
-- Necesitamos utilizar el componente padre como intermediario para que estos dos hermanos se comuniquen
-1. El hermano 1, envía datos al padre
-2. El padre recogerá los datos y se lo pasará al hermano 2
-
+<!--COMUNICACIÓN ENTRE HERMANOS
 
 <h1>Selector de Colores</h1>
 
 <app-hijo1 (colorSeleccionado)="actualizarColor($event)"></app-hijo1>
 <app-hijo2 [color]="colorSeleccionado"></app-hijo2> -->
-
-
-<app-hijo1 (mensajeEnviado)="actualizarMensaje($event)"></app-hijo1>
-<app-hijo2 [mensaje]="mensajeCompartido"></app-hijo2>
